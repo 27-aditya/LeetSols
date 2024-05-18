@@ -1,7 +1,7 @@
 class Solution {
 private:
     void dfs(vector<int>& candidates, int target, vector<int>& curr, vector<vector<int>>& result, int start) {
-        if (target == 0 && (find(result.begin(), result.end(), curr) == result.end())) {
+        if (target == 0 ) {
             result.push_back(curr);
             return;
         }
